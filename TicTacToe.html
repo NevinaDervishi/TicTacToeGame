@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="TicTacToe.css">
+    <script src="TicTacToe.js"></script>
+</head>
+<body>
+
+<h1 >Tic - Tac - Toe Game</h2>
+<table>
+    <tr>
+        <td onClick="clickOnSquare(0)" id = "0"></td>
+        <td onClick="clickOnSquare(1)" id = "1"></td>
+        <td onClick="clickOnSquare(2)" id = "2"></td>
+    </tr>
+    <tr>
+        <td onClick="clickOnSquare(3)" id = "3"></td>
+        <td onClick="clickOnSquare(4)" id = "4"></td>
+        <td onClick="clickOnSquare(5)" id = "5"></td>
+    </tr>
+    <tr>
+        <td onClick="clickOnSquare(6)" id = "6"></td>
+        <td onClick="clickOnSquare(7)" id = "7"></td>
+        <td onClick="clickOnSquare(8)" id = "8"></td>
+    </tr>
+
+</table>
+<button type="button" onClick="resetGame()">Reset GAME</button>
+<div class="chat-container">
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your message">
+    <button onclick="sendMessage()">Send</button>
+</div>
+</body>
+</html>
